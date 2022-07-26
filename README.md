@@ -1,1 +1,1 @@
-"# algorithm-js-ts" 
+"# algorithm-js" 
