@@ -31,4 +31,6 @@ for (let i = 0; i < board[0].length; i++) {
 }
 
 
-console.log(board);
+for (let i = 0; i < board.length; i++) {
+    console.log(...board[i]);
+}
