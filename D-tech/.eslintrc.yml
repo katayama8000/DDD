@@ -1,0 +1,75 @@
+env:
+  browser: true
+  commonjs: true
+  es2021: true
+extends: standard-with-typescript
+parserOptions:
+  ecmaVersion: latest
+  project: ./tsconfig.json
+plugins:
+  - summer
+  - unused-imports
+rules:
+  '@typescript-eslint/no-empty-function': 'error'
+  '@typescript-eslint/no-unused-vars': 'warn'
+  '@typescript-eslint/type-annotation-spacing': 'error'
+  'arrow-parens': 'error'
+  'arrow-spacing': 'error'
+  'block-scoped-var': 'error'
+  'block-spacing': 'error'
+  'class-methods-use-this': 'error'
+  'comma-spacing': 'error'
+  'comma-style': 'error'
+  'constructor-super': 'error'
+  'func-call-spacing': 'error'
+  'func-style': 'error'
+  'import/named': 0
+  'import/namespace': 0
+  'import/no-unresolved': 0
+  'import/order':
+      - 'error'
+      - alphabetize:
+            order: asc
+            caseInsensitive: true
+  'indent': ['error', 2]
+  'jsx-quotes': ['warn', 'prefer-single']
+  'key-spacing': 'error'
+  'keyword-spacing': 'error'
+  'new-parens': 'error'
+  'no-array-constructor': 'error'
+  'no-console': 'warn'
+  'no-const-assign': 'error'
+  'no-duplicate-imports': 'error'
+  'no-else-return': 'error'
+  'no-empty-function': 'off'
+  'no-empty-pattern': 'error'
+  'no-eval': 'error'
+  'no-multiple-empty-lines': ['error', { max: 1 }]
+  'no-return-assign': 'error'
+  '@typescript-eslint/return-await': 'error'
+  'no-tabs': 'error'
+  'no-trailing-spaces': 'error'
+  'no-undef-init': 'error'
+  'no-unused-expressions': 'error'
+  'no-unused-labels': 'error'
+  'no-unused-vars': 'off'
+  'no-useless-concat': 'error'
+  'no-var': 'error'
+  'prefer-const': 'error'
+  'prefer-template': 'error'
+  'require-await': 'error'
+  'semi': 'error'
+  'sort-imports': 0
+  'space-before-blocks': 'error'
+  '@typescript-eslint/space-before-function-paren':
+      [
+          'error',
+          { 'anonymous': 'always', 'named': 'never', 'asyncArrow': 'always' },
+      ]
+  'space-in-parens': 'error'
+  'space-infix-ops': 'error'
+  'spaced-comment': 'error'
+  'summer/no-plain-new-date': 'error'
+  'quotes': ['warn', 'single']
+  'unused-imports/no-unused-imports-ts': warn
+
