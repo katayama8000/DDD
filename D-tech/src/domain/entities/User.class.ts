@@ -26,4 +26,22 @@ export class User {
   get updatedAt(): Date {
     return this._updatedAt;
   }
+
+  public static create(userInfo: {
+    id: number;
+    email: string;
+    password: string;
+    name: string;
+    createdAt: Date;
+    updatedAt: Date;
+  }): User {
+    return new User(
+      userInfo.id,
+      userInfo.email,
+      userInfo.password,
+      userInfo.name,
+      userInfo.createdAt,
+      userInfo.updatedAt
+    );
+  }
 }
